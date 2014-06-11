@@ -21,15 +21,14 @@ public class BaseTest extends BaseClass
 	  public static void startBrowser() throws MalformedURLException// throws Exception
 	  {
 	   //Creating a Firefox WebDriver Object
-//		driver = new FirefoxDriver();
+      //driver = new FirefoxDriver();
 
           DesiredCapabilities caps = DesiredCapabilities.chrome();
           caps.setCapability("platform", "Windows 7");
           caps.setCapability("version", "35");
-//          DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-//          capabilities.setCapability("version", "5");
-//          capabilities.setCapability("platform", Platform.XP);
-          // Create the connection to Sauce Labs to run the tests
+
+          //-----------------------
+        // Create the connection to Sauce Labs to run the tests
           driver = new RemoteWebDriver(
                   new URL("http://cb_sgoud843:d0a05dc9-8302-4210-9ed0-9a74b760afe2@ondemand.saucelabs.com:80/wd/hub"),
                   caps);
