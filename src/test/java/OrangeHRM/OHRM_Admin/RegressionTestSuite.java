@@ -7,12 +7,10 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 
 import java.util.Random;
-
 public class RegressionTestSuite extends BaseTest{
 	//Declaring the WebDriver instance variable
 	BusinessLibrary blib=new BusinessLibrary();
 	Utils util=new Utils();
-	
 	//Test Data
 	String username="admin",password="admin";
 	Random ran=new Random();
@@ -25,7 +23,7 @@ public class RegressionTestSuite extends BaseTest{
 	String lastname1="AK"+ran.nextInt();
 	String nationality="Indian";
 	//Test data for emergency contacts
-	String emgcontacts_name="ulffa"+ran.nextInt();
+	String emgcontacts_name="manjunathbrother"+ran.nextInt();
 	String emgcontacts_relationship="brother";
 	String emgcontacts_homePhone="01912722857";
 	//Test data for add dependents
