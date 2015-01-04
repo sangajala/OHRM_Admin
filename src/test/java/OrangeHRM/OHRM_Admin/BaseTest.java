@@ -24,9 +24,7 @@ public class BaseTest extends BaseClass
           caps.setCapability("version", "35");
        //-----------------------
        // Create the connection to Sauce Labs to run the tests
-          driver = new RemoteWebDriver(
-          new java.net.URL("http://daninsauce:855db6d4-a7fe-4382-8f64-b9f75cb1ee65@ondemand.saucelabs.com:80/wd/hub"),
-                  caps);
+          driver = new RemoteWebDriver(new URL("http://insoft123:c090201a-71b6-48d9-878c-7239349f1521@ondemand.saucelabs.com:80/wd/hub"),caps);
 //          new URL("http://cb_sgoud843:d0a05dc9-8302-4210-9ed0-9a74b760afe2@ondemand.saucelabs.com:80/wd/hub"),
 //                 caps);
 		//Open the URL
